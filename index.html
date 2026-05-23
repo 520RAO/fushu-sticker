@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>复鼠表情包生成器</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="brand-mark">复</div>
+      <div>
+        <h1>复鼠表情包生成器</h1>
+        <p>选择底图，写一句话，生成一张表情包。</p>
+      </div>
+    </header>
+
+    <section class="app">
+      <aside class="panel">
+        <h2>选一张底图</h2>
+        <div class="template-grid">
+          <button class="template-card is-active" type="button" data-image="./images/opossum-1.webp">
+            <img src="./images/opossum-1.webp" alt="复鼠底图 1">
+          </button>
+          <button class="template-card" type="button" data-image="./images/opossum-2.webp">
+            <img src="./images/opossum-2.webp" alt="复鼠底图 2">
+          </button>
+          <button class="template-card" type="button" data-image="./images/opossum-3.webp">
+            <img src="./images/opossum-3.webp" alt="复鼠底图 3">
+          </button>
+          <button class="template-card" type="button" data-image="./images/opossum-4.webp">
+            <img src="./images/opossum-4.webp" alt="复鼠底图 4">
+          </button>
+          <button class="template-card" type="button" data-image="./images/opossum-5.webp">
+            <img src="./images/opossum-5.webp" alt="复鼠底图 5">
+          </button>
+          <button class="template-card" type="button" data-image="./images/opossum-6.webp">
+            <img src="./images/opossum-6.webp" alt="复鼠底图 6">
+          </button>
+          <button class="template-card" type="button" data-image="./images/opossum-7.webp">
+            <img src="./images/opossum-7.webp" alt="复鼠底图 7">
+          </button>
+        </div>
+      </aside>
+
+      <section class="preview-area">
+        <div class="sticker-preview">
+          <img id="previewImage" src="./images/opossum-1.webp" alt="当前表情包预览">
+          <p id="caption" class="caption">什么时候是个头</p>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <h2>写点什么</h2>
+        <label class="field" for="captionInput">
+          <span>表情包文字</span>
+          <textarea id="captionInput" rows="3">什么时候是个头</textarea>
+        </label>
+
+        <div class="field">
+          <span>文字位置</span>
+          <div class="segmented">
+            <button type="button" data-position="top">偏上</button>
+            <button class="is-active" type="button" data-position="middle">居中偏下</button>
+            <button type="button" data-position="bottom">底部</button>
+          </div>
+        </div>
+
+        <button id="downloadButton" class="primary-button" type="button">下载表情包</button>
+        <button id="copyButton" class="secondary-button" type="button">复制到剪贴板</button>
+      </aside>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
