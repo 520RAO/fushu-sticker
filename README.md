@@ -44,6 +44,12 @@ http://127.0.0.1:4173
 https://fushu-sticker-iota.vercel.app
 ```
 
+备用访问地址：
+
+```text
+https://520rao.github.io/fushu-sticker/
+```
+
 部署时不需要构建命令，入口文件是：
 
 ```text
