@@ -38,6 +38,12 @@ http://127.0.0.1:4173
 
 这是一个纯静态网页项目，可以直接部署到 Vercel。
 
+当前线上地址：
+
+```text
+https://fushu-sticker-iota.vercel.app
+```
+
 部署时不需要构建命令，入口文件是：
 
 ```text
